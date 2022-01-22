@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_tipo_mascotas">
+        <item>Seleccione tipo de mascota</item>
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Loro</item>
+        <item>Conejo</item>
+        <item>Gagnster</item>
+    </string-array>
+</resources>
