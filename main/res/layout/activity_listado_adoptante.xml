@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C6E7FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <View
+        android:id="@+id/viewInterfazAdopta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C6E7FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- INICIO TOP BAR -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="415dp"
+        android:layout_height="56dp"
+        android:background="#006591"
+        android:text="Adopta"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRegresar"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:background="#006591"
+        android:src="?attr/actionModeCloseDrawable"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonUserLogoPublicar"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="#0000"
+        android:src="@drawable/usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- FIN TOP BAR -->
+
+
+    <View
+        android:id="@+id/viewMenuBotones"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:background="#006591"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTienda"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="44dp"
+        android:background="#0000"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/carrito"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewMenuTienda"
+        app:layout_constraintEnd_toEndOf="@+id/viewMenuBotones"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBotones"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSolicitudes"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        android:background="#0000"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/notas"
+        app:tint="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBotones"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBotones" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPublicar"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:background="#0000"
+        android:src="@drawable/patita"
+        app:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBotones"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBotones"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/textViewMenuPublicar"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:text="Publicar mascotas"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBotones"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonPublicar"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <TextView
+        android:id="@+id/textViewMenuSolicitudes"
+        android:layout_width="70dp"
+        android:layout_height="33dp"
+        android:text="Solicitudes"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBotones" />
+
+    <!-- CONTINUACIÓN PARTE MEDIA -->
+
+    <TextView
+        android:id="@+id/textViewMenuTienda"
+        android:layout_width="70dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        android:text="Publicar productos"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/viewInterfazAdopta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBotones"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TableLayout
+        android:id="@+id/TableSolicitudes"
+        android:layout_width="352dp"
+        android:layout_height="400dp"
+        android:background="#130A0A"
+        android:backgroundTint="#00000000"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/txtMascota"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mascota" />
+
+            <TextView
+                android:id="@+id/textSolicitante"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Solicitante" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Estado" />
+
+            <TextView
+                android:id="@+id/textWatchMore"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ver más" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <ImageButton
+                android:id="@+id/imageCheck2"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:gravity="center"
+                app:srcCompat="@drawable/outline_visibility_black_24dp" />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
